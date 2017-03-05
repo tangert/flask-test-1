@@ -12,7 +12,7 @@ def hello_world():
 def show_test():
 	return "testing!"
 
-@app.route('/post-test', methods=['POST'])
+@app.route('/post-test', methods=['POST','GET'])
 def test_backend():
 	return RESTAPI.test(request.get_json())
 
